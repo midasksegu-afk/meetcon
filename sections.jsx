@@ -217,7 +217,7 @@ function Program() {
 
 /* ============ Process ============ */
 const STEPS = [
-{ lab: 'STEP 01', t: '접수 및 비용 입금', d: '결제 및 서류 접수가 모두 완료되어야 예약이 확정됩니다.' },
+{ lab: 'STEP 01', t: '컨설팅 일정 예약 및 비용입금', d: '면접컨설팅 대면 일정 예약 및 결제가 모두 완료되어야 예약이 확정됩니다.' },
 { lab: 'STEP 02', t: '학생부(최종본) 접수', d: 'FAX 053-782-0290 또는 e-mail ubestudy@naver.com 으로 전송. 지원 대학 및 학과 정보를 함께 보내주세요.' },
 { lab: 'STEP 03', t: '예상 질문 추출', d: '학생부와 지원 학과 정보를 바탕으로 마이더스K가 예상 질문지를 작성합니다.' },
 { lab: 'STEP 04', t: '면접 컨설팅 진행', d: '1:2 컨설팅으로 답변 보강 · 위기 대응 시뮬레이션 · 태도·자세·발성 코칭을 진행합니다.' }];
@@ -246,10 +246,10 @@ function Process() {
 
 /* ============ Contact ============ */
 const CONTACTS = [
-{ lab: '대표 번호', v: '053-782-0331', d: '면접컨설팅 관련 직접 전화해주시면 담당 직원이 안내해 드립니다.', href: 'tel:05378200331', cta: '📞 클릭하여 전화하기' },
-{ lab: '문자 문의', v: '010-6280-4410', d: '"면접컨설팅 신청합니다"로 문자 보내주시면 담당 선생님이 연락드립니다.', href: 'tel:01062804410', cta: '📱 클릭하여 전화하기' },
-{ lab: '메일 문의', v: 'ubestudy@naver.com', d: '궁금한 점을 메일로 보내주시면 담당 직원이 연락드립니다.', href: 'mailto:ubestudy@naver.com', cta: '✉️ 메일 보내기' },
-{ lab: '온라인 신청', v: '1회 무료 내방 상담', d: '통합 신청폼에서 06번 수시 면접컨설팅으로 신청해주세요.', href: 'https://forms.gle/zv59Mo6eEDi4LdmY8', cta: '신청폼 열기 ↗' }];
+{ lab: '대표 번호', v: '053-782-0331', d: '면접컨설팅 관련 직접 전화해주시면 담당 선생님이 안내해 드립니다.', href: 'tel:05378200331', cta: '📞 클릭하여 전화하기' },
+{ lab: '문자 문의', v: '010-6280-4410', d: '"면접컨설팅 신청합니다"로 문자 보내주시면 담당 선생님이 연락드립니다.', href: 'tel:01062804410', cta: '📱 클릭하여 문자하기' },
+{ lab: '메일 문의', v: 'ubestudy@naver.com', d: '궁금한 점을 메일로 보내주시면 담당 선생님이 연락드립니다.', href: 'mailto:ubestudy@naver.com', cta: '✉️ 메일 보내기' },
+{ lab: '온라인 신청', v: '통합 신청폼 작성하기', d: '통합 신청폼에서 06번 수시 면접컨설팅으로 신청해주세요.', href: 'https://forms.gle/zv59Mo6eEDi4LdmY8', cta: '신청폼 열기 ↗' }];
 
 
 function Contact() {
@@ -258,7 +258,7 @@ function Contact() {
       <Reveal>
         <span className="eyebrow"><span className="ln"></span>CONTACT</span>
         <h2>마이더스K <em>수시 면접 컨설팅</em> 상담 문의</h2>
-        <p className="sub">마이더스K의 관리 정책에 따라 학년별 정원제로 운영하고 있어 즉시 가입이 되지 않을 수 있습니다.</p>
+        <p className="sub">아래 중 편한 방법으로 예약 신청해 주시면 됩니다.</p>
       </Reveal>
       <div className="contact">
         {CONTACTS.map((c, i) => {
@@ -296,7 +296,7 @@ function Notice() {
         <h4 style={{ color: '#1F45A8' }}>구비서류</h4>
         <ol style={{ color: '#243a72' }}>
           <li>학교생활기록부 (최종본)</li>
-          <li>지원 대학 및 학과 정보</li>
+          <li>지원 대학 및 학과</li>
           <li>FAX 전송 <b>053-782-0290</b> 또는 e-mail <b>ubestudy@naver.com</b></li>
         </ol>
       </div>
