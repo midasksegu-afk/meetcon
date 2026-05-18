@@ -258,7 +258,7 @@ function Contact() {
       <Reveal>
         <span className="eyebrow"><span className="ln"></span>CONTACT</span>
         <h2>마이더스K <em>수시 면접 컨설팅</em> 상담 문의</h2>
-        <p className="sub">마이더스K의 관리 정책에 따라 학년별 정원제로 운영하고 있어 즉시 가입이 되지 않을 수 있습니다.</p>
+        <p className="sub">아래와 같이 상담예약을 신청 진행해주시면 감사하겠습니다.</p>
       </Reveal>
       <div className="contact">
         {CONTACTS.map((c, i) => {
