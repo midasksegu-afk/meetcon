@@ -210,16 +210,7 @@ function Program() {
         </div>
       </Reveal>
 
-      <div className="univ-block">
-        {u.groups.map((g, i) =>
-        <Reveal key={g.h + tab}>
-            <h4><span className="tag">{g.h}</span><span style={{ color: 'var(--muted)', fontWeight: 500, fontSize: 13 }}>{g.list.length}개교</span></h4>
-            <div className="chips">
-              {g.list.map((n) => <span key={n} className="chip">{n}</span>)}
-            </div>
-          </Reveal>
-        )}
-      </div>
+
     </section>);
 
 }
