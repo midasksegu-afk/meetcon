@@ -70,7 +70,7 @@ function Hero() {
               <li>교육진흥부문 <b>교육감상 표창</b></li>
               <li>네이버 프리미엄 콘텐츠 <b>교육 분야 우수 콘텐츠</b> 선정</li>
             </ul>
-            <a href="tel:05378200331" className="hero-call" aria-label="면접 상담 전화" style={{ textDecoration: 'none' }}>
+            <a href="tel:0537820331" className="hero-call" aria-label="면접 상담 전화" style={{ textDecoration: 'none' }}>
               <span className="hc-lab">면접 상담 (클릭 시 바로 전화)</span>
               <span className="hc-num">053<span className="hc-d">‐</span>782<span className="hc-d">‐</span>0331</span>
             </a>
@@ -246,8 +246,8 @@ function Process() {
 
 /* ============ Contact ============ */
 const CONTACTS = [
-{ lab: '대표 번호', v: '053-782-0331', d: '면접컨설팅 관련 직접 전화해주시면 담당 선생님이 안내해 드립니다.', href: 'tel:05378200331', cta: '📞 클릭하여 전화하기' },
-{ lab: '문자 문의', v: '010-6280-4410', d: '"면접컨설팅 신청합니다"로 문자 보내주시면 담당 선생님이 연락드립니다.', href: 'tel:01062804410', cta: '📱 클릭하여 문자하기' },
+{ lab: '대표 번호', v: '053-782-0331', d: '면접컨설팅 관련 직접 전화해주시면 담당 선생님이 안내해 드립니다.', href: 'tel:0537820331', cta: '📞 클릭하여 전화하기' },
+{ lab: '문자 문의', v: '010-6280-4410', d: '"면접컨설팅 신청합니다"로 문자 보내주시면 담당 선생님이 연락드립니다.', href: 'sms:01062804410', cta: '📱 클릭하여 문자하기' },
 { lab: '메일 문의', v: 'ubestudy@naver.com', d: '궁금한 점을 메일로 보내주시면 담당 선생님이 연락드립니다.', href: 'mailto:ubestudy@naver.com', cta: '✉️ 메일 보내기' },
 { lab: '온라인 신청', v: '통합 신청폼 작성하기', d: '통합 신청폼에서 06번 수시 면접컨설팅으로 신청해주세요.', href: 'https://forms.gle/zv59Mo6eEDi4LdmY8', cta: '신청폼 열기 ↗' }];
 
