@@ -76,7 +76,7 @@ function Hero() {
             </div>
           </div>
           <div className="hero-photo">
-            <img src="스피커.png" alt="마이더스K 대표 강연 모습" />
+            <img src="speaker.png" alt="마이더스K 대표 강연 모습" />
             <div className="caption">티처스 출연 · MIDAS K</div>
           </div>
         </div>
@@ -337,7 +337,7 @@ function FloatCTA() {
 function Footer() {
   return (
     <footer className="footer">
-      <div className="logo"><img src="로고.png" alt="" />MIDAS K · Education Consulting</div>
+      <div className="logo"><img src="logo.png" alt="" />MIDAS K · Education Consulting</div>
       <div>2027학년도 수시 면접컨설팅 · 053-782-0331</div>
       <div style={{ marginTop: 4, opacity: .7 }}> </div>
     </footer>);
