@@ -142,7 +142,7 @@ const UNIVS = {
 
     items: [
     '학생부기반 서류심층면접',
-    '면접 예상 질문지 제공 (학생부 사전 등록 시)',
+    '면접 예상 질문지 제공',
     '취약점 분석 및 위기 관리법 컨설팅',
     '면접 자세 및 태도 교정',
     '비대면 면접 업로드용 영상 촬영 지원 (학생폰으로 촬영)',
@@ -161,7 +161,7 @@ const UNIVS = {
 
     items: [
     '학생부기반 서류심층면접',
-    '면접 예상 질문지 제공 (학생부 사전 등록 시)',
+    '면접 예상 질문지 제공',
     '취약점 분석 및 위기 관리법 컨설팅',
     '면접 자세 및 태도 교정',
     '비대면 면접 업로드용 영상 촬영 지원 (학생폰으로 촬영)',
@@ -218,7 +218,7 @@ function Program() {
 /* ============ Process ============ */
 const STEPS = [
 { lab: 'STEP 01', t: '컨설팅 일정 예약 및 비용입금', d: '면접컨설팅 대면 일정 예약 및 결제가 모두 완료되어야 예약이 확정됩니다.' },
-{ lab: 'STEP 02', t: '학생부 분석', d: 지원 대학 및 학과 정보를 함께 보내주세요.' },
+{ lab: 'STEP 02', t: '학생부 분석', d: '' },
 { lab: 'STEP 03', t: '예상 질문 추출', d: '학생부와 지원 학과 정보를 바탕으로 마이더스K가 예상 질문지를 작성합니다.' },
 { lab: 'STEP 04', t: '면접 컨설팅 진행', d: '1:2 컨설팅으로 답변 보강 · 위기 대응 시뮬레이션 · 태도·자세·발성 코칭을 진행합니다.' }];
 
@@ -229,14 +229,14 @@ function Process() {
       <Reveal>
         <span className="eyebrow"><span className="ln"></span>PROCESS</span>
         <h2>신청 및 <em>진행 절차</em> 안내</h2>
-        <p className="sub">접수 및 비용 입금 + 예상 질문 추출 → 면접 컨설팅 진행</p>
+        <p className="sub">상담 신청 및 비용 입금 → 학생부 분석 → 면접 컨설팅 진행</p>
       </Reveal>
       <div className="timeline">
         {STEPS.map((s, i) =>
         <Reveal key={i} className="step" style={{ transitionDelay: `${i * 80}ms` }}>
             <div className="lab">{s.lab}</div>
             <div className="ttl">{s.t}</div>
-            <div className="desc">{s.d}</div>
+            {s.d && <div className="desc">{s.d}</div>}
           </Reveal>
         )}
       </div>
@@ -290,14 +290,13 @@ function Notice() {
   return (
     <Reveal as="section">
       <span className="eyebrow"><span className="ln"></span>NOTICE</span>
-      <h2><em> 결제관련 유의사항</h2>
+      <h2><em>결제 관련</em> 유의사항</h2>
       <p className="sub">컨설팅 전 꼭 확인해주세요.</p>
       <div className="notice" style={{ background: '#f4f7ff', borderColor: '#d8e1f6' }}>
         <h4 style={{ color: '#1F45A8' }}> 참고사항</h4>
         <ol style={{ color: '#243a72' }}>
-          <li> 학생부 리서치 </li>
+          <li>학생부 분석</li>
           <li>지원 대학 및 학과</li>
-          <li>e-mail <b>ubestudy@naver.com</b></li>
         </ol>
       </div>
       <div className="notice">
