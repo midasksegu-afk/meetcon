@@ -218,7 +218,7 @@ function Program() {
 /* ============ Process ============ */
 const STEPS = [
 { lab: 'STEP 01', t: '컨설팅 일정 예약 및 비용입금', d: '면접컨설팅 대면 일정 예약 및 결제가 모두 완료되어야 예약이 확정됩니다.' },
-{ lab: 'STEP 02', t: '학생부(최종본) 접수', d: 'FAX 053-782-0290 또는 e-mail ubestudy@naver.com 으로 전송. 지원 대학 및 학과 정보를 함께 보내주세요.' },
+{ lab: 'STEP 02', t: '학생부 분석', d: 지원 대학 및 학과 정보를 함께 보내주세요.' },
 { lab: 'STEP 03', t: '예상 질문 추출', d: '학생부와 지원 학과 정보를 바탕으로 마이더스K가 예상 질문지를 작성합니다.' },
 { lab: 'STEP 04', t: '면접 컨설팅 진행', d: '1:2 컨설팅으로 답변 보강 · 위기 대응 시뮬레이션 · 태도·자세·발성 코칭을 진행합니다.' }];
 
@@ -229,7 +229,7 @@ function Process() {
       <Reveal>
         <span className="eyebrow"><span className="ln"></span>PROCESS</span>
         <h2>신청 및 <em>진행 절차</em> 안내</h2>
-        <p className="sub">접수 및 비용 입금 + 학생부(최종본) 접수 → 예상 질문 추출 → 면접 컨설팅 진행</p>
+        <p className="sub">접수 및 비용 입금 + 예상 질문 추출 → 면접 컨설팅 진행</p>
       </Reveal>
       <div className="timeline">
         {STEPS.map((s, i) =>
@@ -290,21 +290,20 @@ function Notice() {
   return (
     <Reveal as="section">
       <span className="eyebrow"><span className="ln"></span>NOTICE</span>
-      <h2><em>구비서류 안내</em> & 결제관련 유의사항</h2>
+      <h2><em> 결제관련 유의사항</h2>
       <p className="sub">컨설팅 전 꼭 확인해주세요.</p>
       <div className="notice" style={{ background: '#f4f7ff', borderColor: '#d8e1f6' }}>
-        <h4 style={{ color: '#1F45A8' }}>구비서류</h4>
+        <h4 style={{ color: '#1F45A8' }}> 참고사항</h4>
         <ol style={{ color: '#243a72' }}>
-          <li>학교생활기록부 (최종본)</li>
+          <li> 학생부 리서치 </li>
           <li>지원 대학 및 학과</li>
-          <li>FAX 전송 <b>053-782-0290</b> 또는 e-mail <b>ubestudy@naver.com</b></li>
+          <li>e-mail <b>ubestudy@naver.com</b></li>
         </ol>
       </div>
       <div className="notice">
         <h4>결제 관련 유의사항</h4>
         <ol>
-          <li>현금 및 카드 결제 가능 — <b>결제 + 서류 접수 모두 완료 시 예약 확정</b></li>
-          <li>학생부 접수 시점부터 실적 분석이 진행되므로 <b>취소 시 10만원 차감</b></li>
+          <li>현금 및 카드 결제 가능 — <b>결제 완료 시 예약 확정</b></li>
           <li>면접컨설팅 자료 발송 후 취소 시 <b>20만원</b> (면접분석 10만원 + 맞춤질문지 10만원) 차감 후 환불</li>
           <li>상담 당일 취소 시 <b>전액 환불 불가</b></li>
         </ol>
