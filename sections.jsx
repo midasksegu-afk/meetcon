@@ -294,10 +294,9 @@ function Notice() {
       <p className="sub">컨설팅 전 꼭 확인해주세요.</p>
       <div className="notice" style={{ background: '#f4f7ff', borderColor: '#d8e1f6' }}>
         <h4 style={{ color: '#1F45A8' }}> 참고사항</h4>
-        <ol style={{ color: '#243a72' }}>
-          <li>학생부 분석</li>
-          <li>지원 대학 및 학과</li>
-        </ol>
+        <p style={{ margin: 0, color: '#243a72', fontSize: 14, lineHeight: 1.7 }}>
+          컨설팅 진행에 필요한 준비 사항은 예약 확정 후 담당 선생님이 개별 안내드립니다.
+        </p>
       </div>
       <div className="notice">
         <h4>결제 관련 유의사항</h4>
