@@ -196,7 +196,6 @@ function Program() {
           </div>
           <div className="num">
             <div className="big">{u.price.split(/(만원~?)/)[0]}<span className="u">{u.price.split(/(만원~?)/).slice(1).join('')}</span></div>
-            <div className="small">VAT 별도 · 카드·현금 결제</div>
           </div>
         </div>
         <div className="price-body">
